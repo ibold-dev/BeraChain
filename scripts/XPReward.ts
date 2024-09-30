@@ -6,7 +6,7 @@ import {
   NonceManager,
 } from "ethers";
 import { processTypechainAbis } from "./process-typechain-abis";
-import * as typechain from "../typechain-types-push";
+import * as typechain from "../typechain-types";
 import dotenv from "dotenv";
 dotenv.config({ path: ".env" });
 
