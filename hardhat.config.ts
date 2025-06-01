@@ -46,6 +46,18 @@ const config: HardhatUserConfig = {
       accounts: [WALLET_KEY_TESTNET],
       gasPrice: 1000000000,
     },
+
+    soneium_testnet: {
+      url: `https://rpc.minato.soneium.org/`,
+      accounts: [WALLET_KEY_TESTNET],
+      gasPrice: 1000000000,
+    },
+
+    base_mainnet: {
+      url: `https://base.llamarpc.com`,
+      accounts: [WALLET_KEY_TESTNET],
+      gasPrice: 1000000000,
+    },
   },
 };
 

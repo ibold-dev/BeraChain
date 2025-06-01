@@ -2,7 +2,10 @@
   "name": "hardhat-project",
   "scripts": {
     "d-XP-t": "npx hardhat ignition deploy ./ignition/modules/XPReward.ts --network bera_testnet --deployment-id XP_bera_testnet_02",
-    "run_script": "ts-node scripts/XPReward.ts"
+    "d-XP-t_sonieum": "npx hardhat ignition deploy ./ignition/modules/XPReward.ts --network soneium_testnet --deployment-id XP_soneium_testnet_02",
+    "d-XP-t_base": "npx hardhat ignition deploy ./ignition/modules/XPReward.ts --network base_mainnet --deployment-id XP_base_mainnet_02",
+    "run_script": "ts-node scripts/XPReward.ts",
+    "run_script_sonieum": "ts-node scripts/XPReward_Sonieum.ts"
   },
   "dependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
@@ -28,7 +31,23 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
+    "@layerzerolabs/eslint-config-next": "~2.3.39",
+    "@layerzerolabs/lz-definitions": "^2.3.39",
+    "@layerzerolabs/lz-evm-messagelib-v2": "^2.3.39",
+    "@layerzerolabs/lz-evm-protocol-v2": "^2.3.39",
+    "@layerzerolabs/lz-evm-v1-0.7": "^2.3.39",
+    "@layerzerolabs/lz-v2-utilities": "^2.3.39",
+    "@layerzerolabs/oapp-evm": "^0.0.4",
+    "@layerzerolabs/oft-evm": "^0.0.11",
+    "@layerzerolabs/onft-evm": "^0.0.7",
+    "@layerzerolabs/prettier-config-next": "^2.3.39",
+    "@layerzerolabs/solhint-config": "^2.3.39",
+    "@layerzerolabs/test-devtools-evm-foundry": "~0.2.12",
+    "@layerzerolabs/toolbox-foundry": "~0.1.9",
+    "@layerzerolabs/toolbox-hardhat": "~0.4.0",
+    "compile": "^0.0.2",
     "dotenv": "^16.4.5",
+    "solidity-bytes-utils": "^0.8.2",
     "type-fest": "^4.26.1"
   }
 }
